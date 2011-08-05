@@ -1,0 +1,55 @@
+#menu { width: 1024px; height: 100px; position: absolute; z-index: 10;}
+
+#menu-buttons {
+  padding: 53px 50px 0 0;
+}
+
+#menu p{
+  float: right;
+  width: 110px;
+  height: 47px;
+  margin: 0px;
+  padding: 0 2px;
+  position: relative;
+  bottom: 0;
+  background-repeat: no-repeat;
+}
+
+#menu p a {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin-left: -2px;
+}
+
+#firma-button {
+  background-image: url(/images/layouts/firma.png);
+}
+
+#firma-button.hovered {
+  background-image: url(/images/layouts/firma_active.png) !important;
+}
+
+#urzadzenia-button {
+  background-image: url(/images/layouts/urzadzenia.png);
+}
+
+#urzadzenia-button.hovered {
+  background-image: url(/images/layouts/urzadzenia_active.png) !important;
+}
+
+#partnerzy-button {
+  background-image: url(/images/layouts/partnerzy.png);
+}
+
+#partnerzy-button.hovered {
+  background-image: url(/images/layouts/partnerzy_active.png) !important;
+}
+
+#pomoc-button {
+  background-image: url(/images/layouts/pomoc.png);
+}
+
+#pomoc-button.hovered {
+  background-image: url(/images/layouts/pomoc_active.png) !important;
+}

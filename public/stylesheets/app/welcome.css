@@ -1,0 +1,13 @@
+#main-circle {
+  top: 83px;
+  left: 100px;
+  width: 550px;
+  position: relative;
+}
+
+#main-circle-content {
+  top: -85px;
+  left: -264px;
+  width: 254px;
+  position: relative;
+}

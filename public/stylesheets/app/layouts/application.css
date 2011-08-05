@@ -1,0 +1,19 @@
+body {
+  font-family: "Archer", arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+#background-image {
+  position: absolute;
+  z-index: -1;
+}
+
+#page {
+  width: 1024px;
+  height: auto;
+  margin: 0 auto;
+}
