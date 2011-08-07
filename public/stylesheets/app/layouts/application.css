@@ -4,7 +4,6 @@ body {
   line-height: 1.4;
   height: 100%;
   margin: 0;
-  overflow: hidden;
 }
 
 #background-image {
@@ -23,18 +22,26 @@ body {
   width: 510px;
 }
 
-#main {
-  float: right;
-  position: relative;
-}
-
 #circle {
   width: 510px;
 }
 
 #circle-content {
-  top: -401px;
-  left: 171px;
-  width: 236px;
+  top: -465px;
+  left: 119px;
+  width: 273px;
   position: relative;
+}
+
+#main {
+  float: right;
+  position: relative;
+  top: 230px;
+}
+
+#sub-dot {
+  position: relative;
+  top: -596px;
+  left: 207px;
+
 }

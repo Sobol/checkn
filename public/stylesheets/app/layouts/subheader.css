@@ -136,3 +136,35 @@
   background-image: url(/images/layouts/samochody_active.png) !important;
 }
 /* help end */
+/* submenu lines */
+
+#left-line, #middle-line, #right-line {
+  position: relative;
+  top: 35px;
+}
+
+#left-line-help, #middle-line-help, #right-line-help {
+  position: relative;
+  top: -12px;
+}
+
+#left-line, #left-line-help {
+  width: 265px;
+  right: 100px;
+}
+
+#left-line-help {
+  top: 35px !important;
+}
+
+#middle-line, #middle-line-help {
+  width: 378px;
+  right: 100px;
+}
+
+#right-line, #right-line-help {
+  width: 497px;
+  right: 101px;
+}
+
+/* submenu lines end */
