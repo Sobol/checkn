@@ -1,13 +1,11 @@
-#main-circle {
-  top: 83px;
-  left: 100px;
-  width: 550px;
-  position: relative;
+#circle {
+  margin-top: -17px;
+  margin-left: 144px;
+  width: 550px !important;
 }
 
-#main-circle-content {
-  top: -85px;
-  left: -264px;
-  width: 254px;
-  position: relative;
+#circle-content {
+  top: -433px !important;
+  left: 329px !important;
+  width: 254px !important;
 }

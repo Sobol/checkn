@@ -1,0 +1,44 @@
+<div id="subheader">
+  <% if params[:controller] == "static_pages" %>
+    <% if params[:action] == "company" || params[:action] == "contact" || params[:action] == "news" %>
+      <%= image_tag "layouts/company_main_line.png", alt: 'company line', id: 'main-line' -%>
+      <%= image_tag "layouts/dot.png", alt: 'company main dot', id: 'dot' -%>
+      <p id="aktualnosci-button" class="<%= params[:action] == 'news' ? 'active':''%>">
+        <%= link_to "", news_static_pages_path %>
+      </p>
+      <p id="kontakt-button" class="<%= params[:action] == 'contact' ? 'active':''%>">
+        <%= link_to "", contact_static_pages_path %>
+      </p>
+    <% elsif params[:action] == "devices" || params[:action] == "localization" || params[:action] == "cooperation" %>
+      <%= image_tag "layouts/devices_main_line.png", alt: 'company line', id: 'main-line' -%>
+      <%= image_tag "layouts/dot.png", alt: 'company main dot', id: 'dot' -%>
+      <p id="wspolpraca-button" class="<%= params[:action] == 'cooperation' ? 'active':''%>">
+        <%= link_to "", cooperation_static_pages_path %>
+      </p>
+      <p id="lokalizacje-button" class="<%= params[:action] == 'localization' ? 'active':''%>">
+        <%= link_to "", localization_static_pages_path %>
+      </p>
+    <% elsif params[:action] == "partners" || params[:action] == "technodiag" || params[:action] == "imedia" %>
+      <%= image_tag "layouts/partners_main_line.png", alt: 'company line', id: 'main-line' -%>
+      <%= image_tag "layouts/dot.png", alt: 'company main dot', id: 'dot' -%>
+      <p id="imedia-button" class="<%= params[:action] == 'imedia' ? 'active':''%>">
+        <%= link_to "", imedia_static_pages_path %>
+      </p>
+      <p id="technodiag-button" class="<%= params[:action] == 'technodiag' ? 'active':''%>">
+        <%= link_to "", technodiag_static_pages_path %>
+      </p>
+    <% elsif params[:action] == "help" || params[:action] == "codes" || params[:action] == "connectors" || params[:action] == "cars" %>
+      <%= image_tag "layouts/help_main_line.png", alt: 'company line', id: 'main-line' -%>
+      <%= image_tag "layouts/dot.png", alt: 'company main dot', id: 'dot-help' -%>
+      <p id="samochody-button" class="<%= params[:action] == 'cars' ? 'active':''%>">
+        <%= link_to "", cars_static_pages_path %>
+      </p>
+      <p id="zlacza-button" class="<%= params[:action] == 'connectors' ? 'active':''%>">
+        <%= link_to "", connectors_static_pages_path %>
+      </p>
+      <p id="kody-button" class="<%= params[:action] == 'codes' ? 'active':''%>">
+        <%= link_to "", codes_static_pages_path %>
+      </p>
+    <% end %>
+  <% end %>
+</div>

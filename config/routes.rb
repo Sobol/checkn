@@ -7,6 +7,15 @@ Checkn::Application.routes.draw do
       get 'devices'
       get 'partners'
       get 'help'
+      get 'contact'
+      get 'news'
+      get 'localization'
+      get 'cooperation'
+      get 'technodiag'
+      get 'imedia'
+      get 'codes'
+      get 'connectors'
+      get 'cars'
     end
   end
 end

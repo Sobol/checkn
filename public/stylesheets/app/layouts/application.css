@@ -17,3 +17,24 @@ body {
   height: auto;
   margin: 0 auto;
 }
+
+#images {
+  float: left;
+  width: 510px;
+}
+
+#main {
+  float: right;
+  position: relative;
+}
+
+#circle {
+  width: 510px;
+}
+
+#circle-content {
+  top: -401px;
+  left: 171px;
+  width: 236px;
+  position: relative;
+}

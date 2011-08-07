@@ -1,7 +1,13 @@
-#menu { width: 1024px; height: 100px; position: absolute; z-index: 10;}
+#menu {
+  width: 1024px;
+  height: 100px;
+  display: block;
+}
 
 #menu-buttons {
-  padding: 53px 50px 0 0;
+  padding-top: 53px;
+  float: right;
+  width: 100%;
 }
 
 #menu p{
@@ -9,7 +15,7 @@
   width: 110px;
   height: 47px;
   margin: 0px;
-  padding: 0 2px;
+  padding: 0 3px;
   position: relative;
   bottom: 0;
   background-repeat: no-repeat;
@@ -25,7 +31,7 @@
 #firma-button {
   background-image: url(/images/layouts/firma.png);
 }
-
+#firma-button.active,
 #firma-button.hovered {
   background-image: url(/images/layouts/firma_active.png) !important;
 }
@@ -34,6 +40,7 @@
   background-image: url(/images/layouts/urzadzenia.png);
 }
 
+#urzadzenia-button.active,
 #urzadzenia-button.hovered {
   background-image: url(/images/layouts/urzadzenia_active.png) !important;
 }
@@ -42,6 +49,7 @@
   background-image: url(/images/layouts/partnerzy.png);
 }
 
+#partnerzy-button.active,
 #partnerzy-button.hovered {
   background-image: url(/images/layouts/partnerzy_active.png) !important;
 }
@@ -50,6 +58,7 @@
   background-image: url(/images/layouts/pomoc.png);
 }
 
+#pomoc-button.active,
 #pomoc-button.hovered {
   background-image: url(/images/layouts/pomoc_active.png) !important;
 }
