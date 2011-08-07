@@ -4,8 +4,14 @@
   display: block;
 }
 
+#menu-top-bar {
+  position: relative;
+  width: 1028px;
+  top: 32px;
+}
+
 #menu-buttons {
-  padding-top: 53px;
+  padding-top: 30px;
   float: right;
   width: 100%;
 }

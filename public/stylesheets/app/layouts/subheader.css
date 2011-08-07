@@ -1,24 +1,27 @@
 #subheader {
   float: right;
   margin-top: -17px;
-  width: 514px;
+  width: 474px;
   height: 135px;
   display: block;
 }
 
-#subheader p{
-  right: 175px;
+#subheader .submenu-buttons {
+  float: left;
+  margin-top: 4px;
+  margin-left: 67px;
+}
+
+#subheader .submenu-buttons p{
   width: 110px;
   height: 47px;
   margin: 0px;
   padding: 0 3px;
-  position: relative;
   background-repeat: no-repeat;
-  float: right;
-  top: 90px;
+  float: left;
 }
 
-#subheader p a {
+#subheader .submenu-buttons p a {
   display: block;
   width: 100%;
   height: 30px;
@@ -26,19 +29,19 @@
 }
 
 #main-line {
-  left: 105px;
+  left: 65px;
   position: relative;
 }
 
 #dot {
   top: 5px;
-  right: 20px;
+  right: 59px;
   position: relative;
 }
 
 #dot-help {
   top: 5px;
-  right: 79px;
+  right: 119px;
   position: relative;
 }
 
@@ -107,7 +110,6 @@
 /* help */
 
 #kody-button {
-  top: 5px !important;
   background-image: url(/images/layouts/kody.png);
 }
 
@@ -117,7 +119,6 @@
 }
 
 #zlacza-button {
-  top: 5px !important;
   background-image: url(/images/layouts/zlacza.png);
 }
 
@@ -127,7 +128,6 @@
 }
 
 #samochody-button {
-  right: 60px !important;
   background-image: url(/images/layouts/samochody.png);
 }
 
@@ -140,31 +140,23 @@
 
 #left-line, #middle-line, #right-line {
   position: relative;
-  top: 35px;
+  top: -16px;
+  z-index: -1;
 }
 
-#left-line-help, #middle-line-help, #right-line-help {
-  position: relative;
-  top: -12px;
+#left-line {
+  width: 245px;
+  right: 120px;
 }
 
-#left-line, #left-line-help {
-  width: 265px;
-  right: 100px;
+#middle-line {
+  width: 387px;
+  right: 149px;
 }
 
-#left-line-help {
-  top: 35px !important;
-}
-
-#middle-line, #middle-line-help {
-  width: 378px;
-  right: 100px;
-}
-
-#right-line, #right-line-help {
-  width: 497px;
-  right: 101px;
+#right-line {
+  width: 492px;
+  right: 139px;
 }
 
 /* submenu lines end */

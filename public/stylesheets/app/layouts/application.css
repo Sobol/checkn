@@ -20,16 +20,25 @@ body {
 #images {
   float: left;
   width: 510px;
+  margin-top: -17px;
+  margin-left: 40px;
+}
+
+#images .main-image {
+  top: -770px;
+  left: 60px;
+  position: relative;
+  width: 365px;
 }
 
 #circle {
-  width: 510px;
+  width: 490px;
 }
 
 #circle-content {
-  top: -465px;
-  left: 119px;
-  width: 273px;
+  top: -445px;
+  left: 114px;
+  width: 262px;
   position: relative;
 }
 
@@ -41,7 +50,7 @@ body {
 
 #sub-dot {
   position: relative;
-  top: -596px;
-  left: 207px;
+  top: -572px;
+  left: 200px;
 
 }
