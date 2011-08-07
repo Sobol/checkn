@@ -2,7 +2,6 @@ body {
   font-family: "Archer", arial, sans-serif;
   font-size: 12px;
   line-height: 1.4;
-  height: 100%;
   margin: 0;
 }
 
@@ -15,11 +14,13 @@ body {
   width: 1024px;
   height: auto;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 #images {
   float: left;
   width: 510px;
+  height: 600px;
   margin-top: -17px;
   margin-left: 40px;
 }
