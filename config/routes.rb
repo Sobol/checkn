@@ -1,6 +1,6 @@
 Checkn::Application.routes.draw do
   namespace :admin do
-    resources :news, only: :index
+    resources :news, :only => [:index, :new, :show, :edit, :destroy, :create, :update]
     resources :static_pages, only: :index
     resources :codes, only: :index
     root :to => "news#index"

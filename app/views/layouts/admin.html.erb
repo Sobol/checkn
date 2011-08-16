@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Check N</title>
+  <%= csrf_meta_tag %>
   <meta name="description" content="Checkn is a small privet project.">
 
   <%= yield :stylesheets%>
@@ -17,15 +18,15 @@
   </div>
   <%= image_tag "main_background.png", alt: 'Welcome Checkn', id: 'background-image' -%>
   <div id="page" style="display: none">
-    <header>
-      <div id="user_nav">
-        <% if user_signed_in? %>
-          Witaj  <%= current_user.email %>.
-          <%= link_to "Wyloguj", destroy_user_session_path, :method => :delete %>
-        <% end %>
-      </div>
-      <%= render :partial => "layouts/admin_header" %>
-    </header>
+    <% if user_signed_in? %>
+      <header>
+        <div id="user_nav">
+            Witaj  <%= current_user.email %>.
+            <%= link_to "Wyloguj", destroy_user_session_path, :method => :delete %>
+        </div>
+        <%= render :partial => "layouts/admin_header" %>
+      </header>
+    <% end %>
     <div id="main">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
