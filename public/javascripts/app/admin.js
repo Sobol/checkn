@@ -16,4 +16,10 @@ $(function(){
   }).mouseout(function(){
     $(this).parent().toggleClass("hovered");
   });
+
+  $("#add-codes-button a").mouseover(function(e){
+    $(this).parent().toggleClass("hovered");
+  }).mouseout(function(){
+    $(this).parent().toggleClass("hovered");
+  });
 });

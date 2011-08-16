@@ -67,21 +67,21 @@ body {
   background-image: url(/images/layouts/custom_button.png);
 }
 
-#add-news-button.active,
+#add-codes-button.hovered,
 #add-news-button.hovered,
 #menu p.active,
 #menu p.hovered {
   background-image: url(/images/layouts/custom_button_active.png) !important;
 }
 
-#add-news-button.active a,
+#add-codes-button.hovered a,
 #add-news-button.hovered a,
 #menu p.active a,
 #menu p.hovered a {
   color: white !important;
 }
 
-#add-news-button a, #menu p a {
+#add-news-button a, #add-codes-button a, #menu p a {
   display: block;
   font-weight: bold;
   text-align: center;
@@ -93,11 +93,12 @@ body {
 /* menu ends */
 
 /* news */
-
+#codes-search-form,
 #news-search-form {
   float: left;
 }
 
+#codes-search-form p.search,
 #news-search-form p.search{
   background: url(/images/layouts/input.png) no-repeat;
   width: 193px;
@@ -139,6 +140,7 @@ body {
   background-image: url(/images/layouts/search_active.png) !important;
 }
 
+#add-codes-button,
 #add-news-button {
   float: left;
   width: 110px;
