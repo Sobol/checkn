@@ -1,0 +1,17 @@
+<div id="menu">
+<!--  <%= image_tag "layouts/header_line.png", alt: 'top bar', id: 'menu-top-bar' -%> -->
+  <div id="menu-buttons">
+    <p id="news-button"
+    class="<%= params[:controller] == 'admin/news' ? 'active':''%>">
+      <%= link_to "NEWSY", admin_news_index_path %>
+    </p>
+    <p id="codes-button"
+    class="<%= params[:controller] == 'admin/codes' ? 'active':''%>">
+      <%= link_to "KODY", admin_codes_path %>
+    </p>
+    <p id="static-pages-button"
+    class="<%= params[:controller] == 'admin/static_pages' ? 'active':''%>">
+      <%= link_to "STRONY", admin_static_pages_path %>
+    </p>
+  </div>
+</div>

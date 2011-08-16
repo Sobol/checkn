@@ -1,4 +1,13 @@
 Checkn::Application.routes.draw do
+  namespace :admin do
+    resources :news, only: :index
+    resources :static_pages, only: :index
+    resources :codes, only: :index
+    root :to => "news#index"
+  end
+
+  devise_for :users
+
   root :to => "welcome#index"
 
   resources :static_pages, only: [] do
