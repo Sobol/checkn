@@ -140,23 +140,25 @@
 
 #left-line, #middle-line, #right-line {
   position: relative;
-  top: -16px;
+  top: -50px;
   z-index: -1;
 }
 
 #left-line {
-  width: 245px;
-  right: 120px;
+  width: 231px;
+  right: 106px;
 }
 
 #middle-line {
-  width: 387px;
-  right: 149px;
+  top: -15px;
+  width: 336px;
+  right: 105px;
 }
 
 #right-line {
-  width: 492px;
-  right: 139px;
+  top: -15px;
+  width: 502px;
+  right: 150px;
 }
 
 /* submenu lines end */
