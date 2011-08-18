@@ -5,10 +5,10 @@
       <%= image_tag "layouts/dot.png", alt: 'dot', id: 'dot' -%>
       <div class="submenu-buttons">
         <p id="kontakt-button" class="<%= params[:action] == 'contact' ? 'active':''%>">
-          <%= link_to "", contact_static_pages_path %>
+          <%= link_to "", contact_static_pages_path, :class=>"left"  %>
         </p>
         <p id="aktualnosci-button" class="<%= params[:action] == 'news' ? 'active':''%>">
-          <%= link_to "", news_static_pages_path %>
+          <%= link_to "", news_static_pages_path, :class=>"middle"  %>
         </p>
       </div>
     <% elsif params[:action] == "devices" || params[:action] == "localization" || params[:action] == "cooperation" %>
@@ -16,10 +16,10 @@
       <%= image_tag "layouts/dot.png", alt: 'dot', id: 'dot' -%>
       <div class="submenu-buttons">
         <p id="lokalizacje-button" class="<%= params[:action] == 'localization' ? 'active':''%>">
-          <%= link_to "", localization_static_pages_path %>
+          <%= link_to "", localization_static_pages_path, :class=>"left"  %>
         </p>
         <p id="wspolpraca-button" class="<%= params[:action] == 'cooperation' ? 'active':''%>">
-          <%= link_to "", cooperation_static_pages_path %>
+          <%= link_to "", cooperation_static_pages_path, :class=>"middle"  %>
         </p>
       </div>
     <% elsif params[:action] == "partners" || params[:action] == "technodiag" || params[:action] == "imedia" %>
@@ -27,10 +27,10 @@
       <%= image_tag "layouts/dot.png", alt: 'dot', id: 'dot' -%>
       <div class="submenu-buttons">
         <p id="technodiag-button" class="<%= params[:action] == 'technodiag' ? 'active':''%>">
-          <%= link_to "", technodiag_static_pages_path %>
+          <%= link_to "", technodiag_static_pages_path, :class=>"left"  %>
         </p>
         <p id="imedia-button" class="<%= params[:action] == 'imedia' ? 'active':''%>">
-          <%= link_to "", imedia_static_pages_path %>
+          <%= link_to "", imedia_static_pages_path, :class=>"middle"  %>
         </p>
       </div>
     <% elsif params[:action] == "help" || params[:action] == "codes" || params[:action] == "connectors" || params[:action] == "cars" %>
@@ -38,24 +38,35 @@
       <%= image_tag "layouts/dot.png", alt: 'dot', id: 'dot-help' -%>
       <div class="submenu-buttons">
         <p id="kody-button" class="<%= params[:action] == 'codes' ? 'active':''%>">
-          <%= link_to "", codes_static_pages_path %>
+          <%= link_to "", codes_static_pages_path, :class=>"left" %>
         </p>
         <p id="zlacza-button" class="<%= params[:action] == 'connectors' ? 'active':''%>">
-          <%= link_to "", connectors_static_pages_path %>
+          <%= link_to "", connectors_static_pages_path, :class=>"middle" %>
         </p>
         <p id="samochody-button" class="<%= params[:action] == 'cars' ? 'active':''%>">
-          <%= link_to "", cars_static_pages_path %>
+          <%= link_to "", cars_static_pages_path, :class=>"right" %>
         </p>
       </div>
     <% end %>
-
+    <div id="submenu-lines">
     <% if params[:action] == "contact" || params[:action] == "localization" || params[:action] == "technodiag" || params[:action] == "codes" %>
-      <%= image_tag "layouts/submenu_line_left.png", alt: 'left line', id: 'left-line' -%>
-    <% elsif params[:action] == "news" || params[:action] == "cooperation" || params[:action] == "imedia" || params[:action] == "connectors" %>
+      <%= image_tag "layouts/submenu_line_left.png", alt: 'left line', id: 'left-line', class: "active-line" -%>
       <%= image_tag "layouts/submenu_line_middle.png", alt: 'middle line', id: 'middle-line' -%>
-    <% elsif params[:action] == "cars" %>
       <%= image_tag "layouts/submenu_line_right.png", alt: 'right line', id: 'right-line' -%>
-    <% end %>
+    <% elsif params[:action] == "news" || params[:action] == "cooperation" || params[:action] == "imedia" || params[:action] == "connectors" %>
+      <%= image_tag "layouts/submenu_line_left.png", alt: 'left line', id: 'left-line' -%>
+      <%= image_tag "layouts/submenu_line_middle.png", alt: 'middle line', id: 'middle-line', class: "active-line"  -%>
+      <%= image_tag "layouts/submenu_line_right.png", alt: 'right line', id: 'right-line' -%>
+    <% elsif params[:action] == "cars" %>
+      <%= image_tag "layouts/submenu_line_left.png", alt: 'left line', id: 'left-line' -%>
+      <%= image_tag "layouts/submenu_line_middle.png", alt: 'middle line', id: 'middle-line' -%>
+      <%= image_tag "layouts/submenu_line_right.png", alt: 'right line', id: 'right-line', class: "active-line" -%>
+    <% else %>
+      <%= image_tag "layouts/submenu_line_left.png", alt: 'left line', id: 'left-line' -%>
+      <%= image_tag "layouts/submenu_line_middle.png", alt: 'middle line', id: 'middle-line' -%>
+      <%= image_tag "layouts/submenu_line_right.png", alt: 'right line', id: 'right-line' -%>
 
+    <% end %>
+    </div>
   <% end %>
 </div>

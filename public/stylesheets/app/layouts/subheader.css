@@ -139,26 +139,24 @@
 /* submenu lines */
 
 #left-line, #middle-line, #right-line {
-  position: relative;
-  top: -50px;
+  position: absolute;
   z-index: -1;
+  display: none;
 }
 
 #left-line {
-  width: 231px;
-  right: 106px;
+  width: 227px;
 }
 
 #middle-line {
-  top: -15px;
   width: 336px;
-  right: 105px;
 }
 
 #right-line {
-  top: -15px;
-  width: 502px;
-  right: 150px;
+  width: 459px;
 }
 
+#left-line.active-line, #middle-line.active-line, #right-line.active-line {
+  display: inline;
+}
 /* submenu lines end */
