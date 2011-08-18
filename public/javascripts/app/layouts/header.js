@@ -18,7 +18,7 @@ $(function(){
     if (!$(this).parent().hasClass("active")) {
       if (imgData !="partners" ) {
         $("[alt="+imgData+"]").fadeOut('fast', function() {
-          $(".main-image").stop(false, true).fadeIn().css("display","inline");
+          $(".main-image").stop(false, true).css("display","inline");
         });
       }
     }
