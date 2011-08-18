@@ -8,27 +8,44 @@
     <% end %>
 
     <% if params[:action] == "company" %>
-      <%= image_tag "circle-images/firma.png", alt: 'firma', class: 'main-image' -%>
+      <%= image_tag "circle-images/firma.png", alt: 'company', class: 'main-image' %>
+      <%= image_tag "circle-images/kontakt.png", alt: 'contact', class: 'hidden' %>
+      <%= image_tag "circle-images/aktualnosci.png", alt: 'news', class: 'hidden' %>
     <% elsif params[:action] == "contact" %>
-      <%= image_tag "circle-images/kontakt.png", alt: 'kontakt', class: 'main-image' -%>
+      <%= image_tag "circle-images/kontakt.png", alt: 'contact', class: 'main-image' %>
+      <%= image_tag "circle-images/aktualnosci.png", alt: 'news', class: 'hidden' %>
     <% elsif params[:action] == "news" %>
-      <%= image_tag "circle-images/aktualnosci.png", alt: 'aktualnosci', class: 'main-image' -%>
+      <%= image_tag "circle-images/aktualnosci.png", alt: 'news', class: 'main-image' %>
+      <%= image_tag "circle-images/kontakt.png", alt: 'contact', class: 'hidden' %>
     <% elsif params[:action] == "devices" %>
-      <%= image_tag "circle-images/urzadzenia.png", alt: 'urzadzenia', class: 'main-image' -%>
+      <%= image_tag "circle-images/urzadzenia.png", alt: 'devices', class: 'main-image' %>
+      <%= image_tag "circle-images/lokalizacje.png", alt: 'localization', class: 'hidden' %>
+      <%= image_tag "circle-images/wspolpraca.png", alt: 'wspolpraca', class: 'hidden' %>
     <% elsif params[:action] == "localization" %>
-      <%= image_tag "circle-images/lokalizacje.png", alt: 'lokalizacje', class: 'main-image' -%>
+      <%= image_tag "circle-images/lokalizacje.png", alt: 'lokalizacje', class: 'main-image' %>
+      <%= image_tag "circle-images/wspolpraca.png", alt: 'cooperation', class: 'hidden' %>
     <% elsif params[:action] == "cooperation" %>
-      <%= image_tag "circle-images/wspolpraca.png", alt: 'wspolpraca', class: 'main-image' -%>
+      <%= image_tag "circle-images/lokalizacje.png", alt: 'localization', class: 'hidden' %>
+      <%= image_tag "circle-images/wspolpraca.png", alt: 'cooperation', class: 'main-image' %>
     <% elsif params[:action] == "partners" || params[:action] == "technodiag" || params[:action] == "imedia" %>
-      <%= image_tag "circle-images/partnerzy.png", alt: 'partnerzy', class: 'main-image' -%>
+      <%= image_tag "circle-images/partnerzy.png", alt: 'partners', class: 'main-image' %>
     <% elsif params[:action] == "help" %>
-      <%= image_tag "circle-images/pomoc.png", alt: 'pomoc', class: 'main-image' -%>
+      <%= image_tag "circle-images/pomoc.png", alt: 'help', class: 'main-image' %>
+      <%= image_tag "circle-images/kody.png", alt: 'codes', class: 'hidden' %>
+      <%= image_tag "circle-images/zlacza.png", alt: 'connectors', class: 'hidden' %>
+      <%= image_tag "circle-images/samochody.png", alt: 'cars', class: 'hidden' %>
     <% elsif params[:action] == "codes" %>
-      <%= image_tag "circle-images/kody.png", alt: 'kody', class: 'main-image' -%>
+      <%= image_tag "circle-images/kody.png", alt: 'codes', class: 'main-image' -%>
+      <%= image_tag "circle-images/zlacza.png", alt: 'connectors', class: 'hidden' %>
+      <%= image_tag "circle-images/samochody.png", alt: 'cars', class: 'hidden' %>
     <% elsif params[:action] == "connectors" %>
-      <%= image_tag "circle-images/zlacza.png", alt: 'zlacza', class: 'main-image' -%>
+      <%= image_tag "circle-images/kody.png", alt: 'codes', class: 'hidden' %>
+      <%= image_tag "circle-images/zlacza.png", alt: 'connectors', class: 'main-image' -%>
+      <%= image_tag "circle-images/samochody.png", alt: 'cars', class: 'hidden' %>
     <% elsif params[:action] == "cars" %>
-      <%= image_tag "circle-images/samochody.png", alt: 'samochody', class: 'main-image' -%>
+      <%= image_tag "circle-images/kody.png", alt: 'codes', class: 'hidden' %>
+      <%= image_tag "circle-images/zlacza.png", alt: 'connectors', class: 'hidden' %>
+      <%= image_tag "circle-images/samochody.png", alt: 'cars', class: 'main-image' -%>
     <% end %>
   <% end %>
 </div>

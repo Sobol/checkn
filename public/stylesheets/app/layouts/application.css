@@ -23,13 +23,19 @@ body {
   height: 600px;
   margin-top: -50px;
   margin-left: 40px;
+  display: inline;
 }
 
-#images .main-image {
-  top: -749px;
-  left: 57px;
-  position: relative;
+#images .main-image,
+#images img.hidden {
+  margin-top: -481px;
+  margin-left: -198px;
+  position: absolute;
   width: 355px;
+}
+
+#images img.hidden {
+  display: none;
 }
 
 #circle {

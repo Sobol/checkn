@@ -4,10 +4,10 @@
       <%= image_tag "layouts/company_main_line.png", alt: 'company line', id: 'main-line' -%>
       <%= image_tag "layouts/dot.png", alt: 'dot', id: 'dot' -%>
       <div class="submenu-buttons">
-        <p id="kontakt-button" class="<%= params[:action] == 'contact' ? 'active':''%>">
+        <p id="kontakt-button" class="<%= params[:action] == 'contact' ? 'active':''%>" img-data="contact">
           <%= link_to "", contact_static_pages_path, :class=>"left"  %>
         </p>
-        <p id="aktualnosci-button" class="<%= params[:action] == 'news' ? 'active':''%>">
+        <p id="aktualnosci-button" class="<%= params[:action] == 'news' ? 'active':''%>" img-data="news">
           <%= link_to "", news_static_pages_path, :class=>"middle"  %>
         </p>
       </div>

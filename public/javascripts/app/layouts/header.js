@@ -5,6 +5,21 @@ $(function(){
     $(this).parent().toggleClass("hovered");
   });
 
+  $("#subheader p a").hover(function() {
+    if (!$(this).parent().hasClass("active")) {
+      $(".main-image").hide();
+      var imgData = $(this).parent().attr("img-data");
+      $("[alt="+imgData+"]").stop(false, true).fadeIn();
+    }
+  }, function() {
+    if (!$(this).parent().hasClass("active")) {
+      var imgData = $(this).parent().attr("img-data");
+      $("[alt="+imgData+"]").fadeOut('fast', function() {
+        $(".main-image").stop(false, true).css("display","inline");
+      });
+    }
+  });
+
   $("#subheader p a.left").hover(function() {
     if (!$(this).parent().hasClass("active")) {
       $(this).parent().toggleClass("hovered");
