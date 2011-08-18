@@ -15,10 +15,10 @@
       <%= image_tag "layouts/devices_main_line.png", alt: 'devices line', id: 'main-line' -%>
       <%= image_tag "layouts/dot.png", alt: 'dot', id: 'dot' -%>
       <div class="submenu-buttons">
-        <p id="lokalizacje-button" class="<%= params[:action] == 'localization' ? 'active':''%>">
-          <%= link_to "", localization_static_pages_path, :class=>"left"  %>
+        <p id="lokalizacje-button" class="<%= params[:action] == 'localization' ? 'active':''%>", img-data="localization" >
+          <%= link_to "", localization_static_pages_path, :class=>"left"%>
         </p>
-        <p id="wspolpraca-button" class="<%= params[:action] == 'cooperation' ? 'active':''%>">
+        <p id="wspolpraca-button" class="<%= params[:action] == 'cooperation' ? 'active':''%>", img-data="cooperation" >
           <%= link_to "", cooperation_static_pages_path, :class=>"middle"  %>
         </p>
       </div>
@@ -26,10 +26,10 @@
       <%= image_tag "layouts/partners_main_line.png", alt: 'partners line', id: 'main-line' -%>
       <%= image_tag "layouts/dot.png", alt: 'dot', id: 'dot' -%>
       <div class="submenu-buttons">
-        <p id="technodiag-button" class="<%= params[:action] == 'technodiag' ? 'active':''%>">
+        <p id="technodiag-button" class="<%= params[:action] == 'technodiag' ? 'active':''%>", img-data="partners" >
           <%= link_to "", technodiag_static_pages_path, :class=>"left"  %>
         </p>
-        <p id="imedia-button" class="<%= params[:action] == 'imedia' ? 'active':''%>">
+        <p id="imedia-button" class="<%= params[:action] == 'imedia' ? 'active':''%>", img-data="partners">
           <%= link_to "", imedia_static_pages_path, :class=>"middle"  %>
         </p>
       </div>
@@ -37,13 +37,13 @@
       <%= image_tag "layouts/help_main_line.png", alt: 'help line', id: 'main-line' -%>
       <%= image_tag "layouts/dot.png", alt: 'dot', id: 'dot-help' -%>
       <div class="submenu-buttons">
-        <p id="kody-button" class="<%= params[:action] == 'codes' ? 'active':''%>">
+        <p id="kody-button" class="<%= params[:action] == 'codes' ? 'active':''%>", img-data="codes">
           <%= link_to "", codes_static_pages_path, :class=>"left" %>
         </p>
-        <p id="zlacza-button" class="<%= params[:action] == 'connectors' ? 'active':''%>">
+        <p id="zlacza-button" class="<%= params[:action] == 'connectors' ? 'active':''%>", img-data="connectors">
           <%= link_to "", connectors_static_pages_path, :class=>"middle" %>
         </p>
-        <p id="samochody-button" class="<%= params[:action] == 'cars' ? 'active':''%>">
+        <p id="samochody-button" class="<%= params[:action] == 'cars' ? 'active':''%>", img-data="cars">
           <%= link_to "", cars_static_pages_path, :class=>"right" %>
         </p>
       </div>

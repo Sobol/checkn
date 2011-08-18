@@ -6,17 +6,21 @@ $(function(){
   });
 
   $("#subheader p a").hover(function() {
+    var imgData = $(this).parent().attr("img-data");
     if (!$(this).parent().hasClass("active")) {
-      $(".main-image").hide();
-      var imgData = $(this).parent().attr("img-data");
-      $("[alt="+imgData+"]").stop(false, true).fadeIn();
+      if (imgData !="partners" ) {
+        $(".main-image").hide();
+        $("[alt="+imgData+"]").stop(false, true).fadeIn();
+      }
     }
   }, function() {
+    var imgData = $(this).parent().attr("img-data");
     if (!$(this).parent().hasClass("active")) {
-      var imgData = $(this).parent().attr("img-data");
-      $("[alt="+imgData+"]").fadeOut('fast', function() {
-        $(".main-image").stop(false, true).css("display","inline");
-      });
+      if (imgData !="partners" ) {
+        $("[alt="+imgData+"]").fadeOut('fast', function() {
+          $(".main-image").stop(false, true).fadeIn().css("display","inline");
+        });
+      }
     }
   });
 
