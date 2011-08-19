@@ -54,7 +54,7 @@ body {
   position: relative;
   width: 458px;
   height: 600px;
-  top: 120px;
+  top: 70px;
   color: white;
   font-weight: bold;
   font-size: 13px;
@@ -63,14 +63,14 @@ body {
 
 #main .static {
   z-index: 5;
-  top: -460px;
+  top: -440px;
   padding: 0 10px;
   position: relative;
 }
 
 #main-bg {
   width: 458px;
-  height: 470px;
+  height: 450px;
 }
 
 #sub-dot {
@@ -84,5 +84,85 @@ body {
   clear: both;
   top: -15px;
   right: 104px;
+}
 
+.pagination,
+.bottom-bg {
+  background-image: url(/images/layouts/static-bg-bottom.png);
+  background-repeat:repeat-x;
+  height: 30px;
+  width: 458px;
+  margin-top: 0px;
+}
+
+#main-bg.devices {
+  height: 550px  !important;
+}
+
+.static.devices {
+  top: -540px !important;
+}
+
+#main-bg.news {
+  margin-top: 35px;
+  height: 105px  !important;
+}
+
+.static.news {
+  top: -95px !important;
+}
+
+#map {
+  width: 480px;
+  margin-top: 25px;
+}
+
+.map-info {
+  margin-top: 20px;
+}
+
+.news-container {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: -75px;
+  height: 470px;
+}
+
+li:nth-child(2) {
+  margin-top: -470px !important;
+}
+
+.news-container li {
+  padding: 10px 20px 0px 20px;
+}
+
+.news-container p {
+  font-size: 15px;
+}
+
+.news-bg {
+  padding: 0;
+  margin: 0;
+  height: 470px;
+  width: 100%;
+}
+
+.pagination {
+  text-align: right;
+  line-height: 30px;
+}
+
+.pagination a{
+  color: white !important;
+  text-decoration: none;
+}
+
+.pagination .current {
+  font-size: 14px !important;
+}
+
+.created-at {
+  font-size: 11px !important;
+  margin-top: -10px;
 }

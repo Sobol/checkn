@@ -7,8 +7,8 @@
         <p id="kontakt-button" class="<%= params[:action] == 'contact' ? 'active':''%>" img-data="contact">
           <%= link_to "", contact_static_pages_path, :class=>"left"  %>
         </p>
-        <p id="aktualnosci-button" class="<%= params[:action] == 'news' ? 'active':''%>" img-data="news">
-          <%= link_to "", news_static_pages_path, :class=>"middle"  %>
+        <p id="aktualnosci-button" img-data="news">
+          <%= link_to "", news_index_path, :class=>"middle"  %>
         </p>
       </div>
     <% elsif params[:action] == "devices" || params[:action] == "localization" || params[:action] == "cooperation" %>
@@ -48,12 +48,24 @@
         </p>
       </div>
     <% end %>
+  <% elsif params[:controller] == "news" %>
+    <%= image_tag "layouts/company_main_line.png", alt: 'company line', id: 'main-line' -%>
+    <%= image_tag "layouts/dot.png", alt: 'dot', id: 'dot' -%>
+    <div class="submenu-buttons">
+      <p id="kontakt-button" img-data="contact">
+        <%= link_to "", contact_static_pages_path, :class=>"left"  %>
+      </p>
+      <p id="aktualnosci-button" class="active" img-data="news">
+        <%= link_to "", news_static_pages_path, :class=>"middle"  %>
+      </p>
+    </div>
+  <% end %>
     <div id="submenu-lines">
     <% if params[:action] == "contact" || params[:action] == "localization" || params[:action] == "technodiag" || params[:action] == "codes" %>
       <%= image_tag "layouts/submenu_line_left.png", alt: 'left line', id: 'left-line', class: "active-line" -%>
       <%= image_tag "layouts/submenu_line_middle.png", alt: 'middle line', id: 'middle-line' -%>
       <%= image_tag "layouts/submenu_line_right.png", alt: 'right line', id: 'right-line' -%>
-    <% elsif params[:action] == "news" || params[:action] == "cooperation" || params[:action] == "imedia" || params[:action] == "connectors" %>
+    <% elsif params[:controller] == "news" || params[:action] == "cooperation" || params[:action] == "imedia" || params[:action] == "connectors" %>
       <%= image_tag "layouts/submenu_line_left.png", alt: 'left line', id: 'left-line' -%>
       <%= image_tag "layouts/submenu_line_middle.png", alt: 'middle line', id: 'middle-line', class: "active-line"  -%>
       <%= image_tag "layouts/submenu_line_right.png", alt: 'right line', id: 'right-line' -%>
@@ -68,5 +80,4 @@
 
     <% end %>
     </div>
-  <% end %>
 </div>

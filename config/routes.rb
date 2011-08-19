@@ -10,6 +10,8 @@ Checkn::Application.routes.draw do
 
   root :to => "welcome#index"
 
+  resources :news, :only => :index
+
   resources :static_pages, only: [] do
     collection do
       get 'company'

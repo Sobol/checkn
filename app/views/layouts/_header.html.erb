@@ -14,7 +14,7 @@
       <%= link_to "", devices_static_pages_path %>
     </p>
     <p id="firma-button"
-    class="<%= params[:action] == 'company' || params[:action] == 'contact' || params[:action] == 'news' ? 'active':''%>">
+    class="<%= params[:action] == 'company' || params[:action] == 'contact' || params[:controller] == 'news' ? 'active':''%>">
       <%= link_to "", company_static_pages_path %>
     </p>
   </div>

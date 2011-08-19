@@ -1,0 +1,26 @@
+<%= image_tag "layouts/static-bg.png", alt: 'main bg', id: 'main-bg', class: "news" %>
+<div class="static news">
+  <p>
+    W dziale "AKTUALNOŚCI" znajdą Państwo informacje dotyczące nowości wprowadzanych w naszej
+ofercie, stronie internetowej i bieżących wydarzeń w firmie.
+  </p>
+</div>
+
+<ul class="news-container">
+<%= image_tag "layouts/static-bg-half.png", alt: 'news bg', class: "news-bg" %>
+  <% @news.each do |news| %>
+    <li>
+      <h2><%= news.title%></h2>
+      <p class="created-at">Dodano: <%= news.created_at.to_formatted_s(:db) %></p>
+      <% if news.content.length >= 100 %>
+        <p>
+          <%= main_article_description(news) %>
+          <a>więcej</a>
+        </p>
+      <% else %>
+        <p><%= news.content %></p>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+<%= will_paginate @news %>
