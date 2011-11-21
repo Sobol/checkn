@@ -23,6 +23,7 @@
         </p>
       </div>
     <% elsif params[:action] == "partners" || params[:action] == "technodiag" || params[:action] == "imedia" %>
+<!--
       <%= image_tag "layouts/partners_main_line.png", alt: 'partners line', id: 'main-line' -%>
       <%= image_tag "layouts/dot.png", alt: 'dot', id: 'dot' -%>
       <div class="submenu-buttons">
@@ -33,6 +34,7 @@
           <%= link_to "", imedia_static_pages_path, :class=>"middle"  %>
         </p>
       </div>
+-->
     <% elsif params[:action] == "help" || params[:action] == "codes" || params[:action] == "connectors" || params[:action] == "cars" %>
       <%= image_tag "layouts/help_main_line.png", alt: 'help line', id: 'main-line' -%>
       <%= image_tag "layouts/dot.png", alt: 'dot', id: 'dot-help' -%>

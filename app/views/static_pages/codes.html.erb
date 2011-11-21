@@ -2,4 +2,12 @@
 <p class="bottom-bg"></p>
 
 <div class="static">
+  <div>
+      <p class="search">
+        <%= text_field_tag "q", nil, :placeholder => "Szukaj..." %>
+      </p>
+      <p id="commit">
+        <%= submit_tag '' %>
+      </p>
+  </div>
 </div>

@@ -1,8 +1,11 @@
 <div id="images">
-  <%= image_tag "layouts/circle.png", alt: 'Circle', id: 'circle' -%>
-  <%= image_tag "layouts/main_circle_content.png", alt: 'Circle content', id: 'circle-content' -%>
-
-  <% if params[:controller] == "static_pages" %>
+  
+  <% if params[:controller] == "welcome"%>
+    <%= image_tag "layouts/circle.png", alt: 'Circle', id: 'circle' -%>
+    <%= image_tag "circle-images/logo.png", alt: 'Circle content', id: 'circle-content' -%>  
+  <% elsif params[:controller] == "static_pages" %>
+    <%= image_tag "layouts/circle.png", alt: 'Circle', id: 'circle' -%>
+    <%= image_tag "layouts/main_circle_content.png", alt: 'Circle content', id: 'circle-content' -%>
     <% unless params[:action] == "company" || params[:action] == "devices" || params[:action] == "partners" || params[:action] == "help" %>
       <%= image_tag "layouts/dot.png", alt: 'dot', id: 'sub-dot' -%>
     <% end %>
@@ -47,5 +50,8 @@
       <%= image_tag "circle-images/zlacza.png", alt: 'connectors', class: 'hidden' %>
       <%= image_tag "circle-images/samochody.png", alt: 'cars', class: 'main-image' -%>
     <% end %>
+  <% else %>  
+      <%= image_tag "layouts/circle.png", alt: 'Circle', id: 'circle' -%>
+      <%= image_tag "layouts/main_circle_content.png", alt: 'Circle content', id: 'circle-content' -%>
   <% end %>
 </div>
