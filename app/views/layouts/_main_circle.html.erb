@@ -3,6 +3,11 @@
   <% if params[:controller] == "welcome"%>
     <%= image_tag "layouts/circle.png", alt: 'Circle', id: 'circle' -%>
     <%= image_tag "circle-images/logo.png", alt: 'Circle content', id: 'circle-content' -%>  
+  <% elsif params[:controller] == "news" %>
+      <%= image_tag "layouts/circle.png", alt: 'Circle', id: 'circle' -%>
+      <%= image_tag "layouts/main_circle_content.png", alt: 'Circle content', id: 'circle-content' -%>
+      <%= image_tag "circle-images/aktualnosci.png", alt: 'news', class: 'main-image' %>
+      <%= image_tag "circle-images/kontakt.png", alt: 'contact', class: 'hidden' %>
   <% elsif params[:controller] == "static_pages" %>
     <%= image_tag "layouts/circle.png", alt: 'Circle', id: 'circle' -%>
     <%= image_tag "layouts/main_circle_content.png", alt: 'Circle content', id: 'circle-content' -%>
@@ -17,9 +22,6 @@
     <% elsif params[:action] == "contact" %>
       <%= image_tag "circle-images/kontakt.png", alt: 'contact', class: 'main-image' %>
       <%= image_tag "circle-images/aktualnosci.png", alt: 'news', class: 'hidden' %>
-    <% elsif params[:action] == "news" %>
-      <%= image_tag "circle-images/aktualnosci.png", alt: 'news', class: 'main-image' %>
-      <%= image_tag "circle-images/kontakt.png", alt: 'contact', class: 'hidden' %>
     <% elsif params[:action] == "devices" %>
       <%= image_tag "circle-images/urzadzenia.png", alt: 'devices', class: 'main-image' %>
       <%= image_tag "circle-images/lokalizacje.png", alt: 'localization', class: 'hidden' %>

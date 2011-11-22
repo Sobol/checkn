@@ -85,9 +85,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  devise (= 1.4.2)
+  devise
   jquery-rails
-  mysql2 (= 0.2.9)
-  rails (= 3.0.9)
+  mysql2
+  rails
   useragent
   will_paginate (~> 3.0.pre2)

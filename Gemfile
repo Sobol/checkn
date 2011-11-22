@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.9'
-gem 'devise', '1.4.2'
-gem 'mysql2', '0.2.9'
+gem 'rails'
+gem 'devise'
+gem 'mysql2'
 gem "useragent"
 gem 'will_paginate', '~> 3.0.pre2'
 gem 'jquery-rails'
