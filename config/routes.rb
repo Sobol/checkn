@@ -1,7 +1,7 @@
 Checkn::Application.routes.draw do
   namespace :admin do
     resources :news, :only => [:index, :new, :show, :edit, :destroy, :create, :update]
-    resources :maps, only: :index
+    resources :maps, :only => [:index]
     resources :codes, :only => [:index, :new, :show, :edit, :destroy, :create, :update]
     root :to => "news#index"
   end
@@ -12,7 +12,7 @@ Checkn::Application.routes.draw do
 
   resources :news, :only => :index
 
-  resources :static_pages, only: [] do
+  resources :static_pages do
     collection do
       get 'company'
       get 'devices'
