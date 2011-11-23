@@ -20,10 +20,10 @@ test:
 
 production:
   adapter: mysql2
-  database: checkn_production
+  database: my_6661
   pool: 5
   timeout: 5000
   encoding: utf8
-  username: root
-  password: root
-  host: localhost
+  username: my_6661a
+  password: qweasdzxc
+  host: bluecheckpoint.megiteam.pl:3307
