@@ -92,7 +92,7 @@ PLATFORMS
 DEPENDENCIES
   devise
   jquery-rails
-  mongrel (>= 1.2.0.pre2)
+  mongrel
   mysql2
   rails
   useragent
