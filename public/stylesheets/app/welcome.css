@@ -1,3 +1,8 @@
+#images {
+  margin-left: 100px !important;
+  margin-top: -35px !important;
+}
+
 #circle {
   margin-top: 35px;
   margin-left: 100px;
@@ -8,4 +13,13 @@
   top: -501px !important;
   left: 228px !important;
   width: 292px !important;
+}
+
+.static {
+  left: 573px !important;
+  top: -620px !important;
+}
+
+#subheader, #main {
+  display: none !important;
 }

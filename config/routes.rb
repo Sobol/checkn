@@ -8,7 +8,7 @@ Checkn::Application.routes.draw do
 
   devise_for :users
 
-  root :to => "static_pages#company"
+  root :to => "welcome#index"
 
   resources :news, :only => :index
 

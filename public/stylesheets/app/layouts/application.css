@@ -1,3 +1,13 @@
+html {
+  background: url(/images/main_background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/main_background.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/main_background.png', sizingMethod='scale')";
+}
+
 body {
   font-family: "Archer", arial, sans-serif;
   font-size: 12px;
@@ -12,9 +22,7 @@ body {
 
 #page {
   width: 1024px;
-  height: 955px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 #images {
@@ -51,10 +59,8 @@ body {
 
 #main {
   float: right;
-  position: relative;
   width: 458px;
-  height: 600px;
-  top: 70px;
+  margin-top: 70px;
   color: white;
   font-weight: bold;
   font-size: 13px;
@@ -62,10 +68,10 @@ body {
 }
 
 #main .static {
-  z-index: 5;
-  top: -440px;
-  padding: 0 10px;
-  position: relative;
+  padding: 10px 10px;
+  background-image: url(/images/layouts/static-bg.png);
+  background-repeat: repeat-x;
+  background-size: auto 100%;
 }
 
 #main-bg {
@@ -95,18 +101,11 @@ body {
   margin-top: 0px;
 }
 
-#main-bg.devices {
-  height: 550px  !important;
-}
-
-.static.devices {
-  top: -540px !important;
-}
-
 .static .centered {
   margin-top: 30px;
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
+  height: 251px;
 }
 
 #main-bg.news {
@@ -131,7 +130,7 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-top: -75px;
+  margin-top: 15px;
   height: 470px;
 }
 
@@ -188,8 +187,7 @@ ul.news-container li a{
 }
 
 .static div {
-  margin-top: -50px;
-  margin-left: -9px;
+  height: 470px;
 }
 
 p.search {
@@ -231,4 +229,28 @@ input, #q {
 #commit.active,
 #commit.hovered {
   background-image: url(/images/layouts/search_active.png) !important;
+}
+
+.bottom {
+  position: relative;
+  bottom: 0;
+}
+
+#main-text {
+  font-size: 18px;
+}
+
+footer {
+  margin: auto 0;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  text-align: right;
+  vertical-align: bottom;
+  display: block;
+  height: 100px;
+  width: 1024px;
+  font-size: 25px;
+  color: white;
+  clear: both;
 }

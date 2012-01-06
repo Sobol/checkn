@@ -5,9 +5,9 @@
 }
 
 #menu-top-bar {
-  position: relative;
-  width: 1028px;
-  top: 32px;
+  position: absolute;
+  top: 20px;
+  padding-left: 15px;
 }
 
 #menu-buttons {
