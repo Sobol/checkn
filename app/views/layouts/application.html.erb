@@ -5,8 +5,6 @@
   <title>BLUE CHECK POINT</title>
   <%= csrf_meta_tag %>
   <meta name="description" content="Checkn is a small privet project.">
-  <script type="text/javascript" src="http://use.typekit.com/lwd7vyn.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <%= yield :stylesheets%>
   <%# controller stylesheets can be found in app/controller_name.css -%>
   <%= controller_stylesheet_link_tag %>
@@ -23,14 +21,6 @@
     <div id="main">
       <%= yield %>
     </div>
-    <footer>
-      <div>
-        <p class="tk-edding-780">
-          Global Automotive Solutions
-        </p>
-      </div>
-    </footer>
-    
   </div>
 
 
