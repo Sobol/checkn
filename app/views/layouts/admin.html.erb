@@ -13,11 +13,7 @@
   <%= action_stylesheet_link_tag %>
 </head>
 <body id="<%= id_for_body %>" class="<%= browser_class%>">
-  <div id="myLoader" style="position:absolute;top:0px;left:0px;width:100%;height:100%">
-    <center> <%= image_tag"loading.gif", style: "top: 100px;" %></center>
-  </div>
-  <%= image_tag "main_background.png", alt: 'Welcome Checkn', id: 'background-image' -%>
-  <div id="page" style="display: none">
+  <div id="page">
     <% if user_signed_in? %>
       <header>
         <div id="user_nav">
@@ -39,39 +35,5 @@
   <%= javascript_include_tag 'lib/jquery-1.5.1.min', 'lib/rails', 'app/admin' %>
   <%= yield :javascripts %>
 
-  <script type="text/javascript">//<![CDATA[
-    $(document).ready(function() {
-      var resizer = function() {
-        var imgWidth = 1200;
-        var imgHeight = 911;
-        var imgRatio = imgWidth / imgHeight;
-
-        var windowWidth = $(window).width();
-        var windowHeight = $(window).height();
-        var windowRatio = windowWidth / windowHeight;
-
-        var zoom;
-        if (imgRatio > windowRatio)
-          zoom = windowHeight / imgHeight;
-        else
-          zoom = windowWidth / imgWidth;
-
-        $('#background-image').width(imgWidth * zoom);
-        $('#background-image').height(imgHeight * zoom);
-      };
-      resizer();
-      $(window).resize(resizer);
-    });
-
-    var tmp_src =  $("#background-image").attr('src');
-    $("#background-image").load(function() {
-      $("#myLoader").hide();
-      $("#page").fadeIn("slow");
-    }).attr('src', null).
-      attr('src', tmp_src).
-      each(function() {
-        if (this.complete) $(this).trigger('load');
-      });
-     //]]></script>
 </body>
 </html>

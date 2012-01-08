@@ -1,3 +1,13 @@
+html {
+  background: url(/images/main_background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/main_background.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/main_background.png', sizingMethod='scale')";
+}
+
 body {
   font-family: "Archer", arial, sans-serif;
   font-size: 12px;
@@ -12,9 +22,7 @@ body {
 
 #page {
   width: 1024px;
-  height: auto;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 #main, h2, label, a, p {
