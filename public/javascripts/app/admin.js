@@ -22,4 +22,8 @@ $(function(){
   }).mouseout(function(){
     $(this).parent().toggleClass("hovered");
   });
+  
+  if ($("html").hasClass("ie6") || $("html").hasClass("ie7") || $("html").hasClass("ie8")) {
+    $("html").prepend('<div class="ie_bg_fix"></div>');
+  }
 });

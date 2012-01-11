@@ -6,6 +6,14 @@ html {
   background-size: cover;
 }
 
+.ie_bg_fix {
+  z-index: -1;
+  position:fixed; top:0; left:0; width:100%; height:100%;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/main_background.png', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/main_background.png', sizingMethod='scale')";
+}
+
+
 body {
   font-family: "Archer", arial, sans-serif;
   font-size: 12px;

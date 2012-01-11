@@ -158,11 +158,18 @@ li:nth-child(2) {
   font-size: 15px;
 }
 
+
+.ie6 .news-bg,
+.ie7 .news-bg,
+.ie8 .news-bg {
+  position: absolute;
+}
+
 .news-bg {
   padding: 0;
   margin: 0;
   height: 470px;
-  width: 100%;
+  width: 458px;
   z-index: -1;
 }
 
