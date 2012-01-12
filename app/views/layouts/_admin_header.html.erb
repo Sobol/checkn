@@ -12,5 +12,9 @@
     class="<%= params[:controller] == 'admin/maps' ? 'active':''%>">
       <%= link_to "MAPY", admin_maps_path %>
     </p>
+    <p id="images-button"
+    class="<%= params[:controller] == 'admin/device_photos' ? 'active':''%>">
+      <%= link_to "OBRAZKI", admin_device_photos_path %>
+    </p>
   </div>
 </div>

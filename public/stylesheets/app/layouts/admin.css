@@ -201,3 +201,52 @@ body {
 .left { float: left; margin: 0 5px;}
 
 .right { float: right;}
+
+/* Device Images */
+
+.images {
+  width: 100%;
+  display: block;
+}
+
+#device_image_add {
+  height: 60px;
+  width: 100%;
+}
+
+#images ul {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  list-style: none;
+}
+
+#images ul li {
+  display: inline;
+  text-align: center;
+  float: left;
+  list-style: none;
+  height: 130px;
+  padding: 10px;
+  width: 130px;
+}
+
+#images ul li img {
+  height: 120px;
+  width: 120px;
+}
+
+#images ul li a {
+  display:none;
+  position:relative;
+  top: -130px;
+  left: 57px;
+  cursor: pointer;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.remove-image {
+  width: 30px !important;
+  height: 30px !important;
+}

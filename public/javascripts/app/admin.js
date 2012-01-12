@@ -26,4 +26,11 @@ $(function(){
   if ($("html").hasClass("ie6") || $("html").hasClass("ie7") || $("html").hasClass("ie8")) {
     $("html").prepend('<div class="ie_bg_fix"></div>');
   }
+  
+  $("#images ul li").mouseover(function(e){
+    $(this).children("a").show();
+  }).mouseout(function(){
+    $(this).children("a").hide();
+  });
+
 });

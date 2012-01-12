@@ -3,6 +3,7 @@ Checkn::Application.routes.draw do
     resources :news, :only => [:index, :new, :show, :edit, :destroy, :create, :update]
     resources :maps, :only => [:index]
     resources :codes, :only => [:index, :new, :show, :edit, :destroy, :create, :update]
+    resources :device_photos, :only => [:index, :new, :destroy, :create]
     root :to => "news#index"
   end
 
@@ -11,7 +12,6 @@ Checkn::Application.routes.draw do
   root :to => "welcome#index"
 
   resources :news, :only => :index
-
   resources :static_pages do
     collection do
       get 'company'
