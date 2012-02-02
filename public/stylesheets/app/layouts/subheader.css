@@ -47,93 +47,93 @@
 
 /* company */
 #aktualnosci-button {
-  background-image: url(/images/layouts/aktualnosci.png);
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/aktualnosci.png);
 }
 
 #aktualnosci-button.active,
 #aktualnosci-button.hovered {
-  background-image: url(/images/layouts/aktualnosci_active.png) !important;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/aktualnosci_active.png) !important;
 }
 
 #kontakt-button {
-  background-image: url(/images/layouts/kontakt.png);
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/kontakt.png);
 }
 
 #kontakt-button.active,
 #kontakt-button.hovered {
-  background-image: url(/images/layouts/kontakt_active.png) !important;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/kontakt_active.png) !important;
 }
 
 /* contact end */
 /* devices */
 
 #lokalizacje-button {
-  background-image: url(/images/layouts/lokalizacje.png);
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/lokalizacje.png);
 }
 
 #lokalizacje-button.active,
 #lokalizacje-button.hovered {
-  background-image: url(/images/layouts/lokalizacje_active.png) !important;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/lokalizacje_active.png) !important;
 }
 
 #wspolpraca-button {
-  background-image: url(/images/layouts/wspolpraca.png);
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/wspolpraca.png);
 }
 
 #wspolpraca-button.active,
 #wspolpraca-button.hovered {
-  background-image: url(/images/layouts/wspolpraca_active.png) !important;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/wspolpraca_active.png) !important;
 }
 
 /* devices end */
 /* partners */
 
 #technodiag-button {
-  background-image: url(/images/layouts/technodiag.png);
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/technodiag.png);
 }
 
 #technodiag-button.active,
 #technodiag-button.hovered {
-  background-image: url(/images/layouts/technodiag_active.png) !important;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/technodiag_active.png) !important;
 }
 
 #imedia-button {
-  background-image: url(/images/layouts/imedia.png);
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/imedia.png);
 }
 
 #imedia-button.active,
 #imedia-button.hovered {
-  background-image: url(/images/layouts/imedia_active.png) !important;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/imedia_active.png) !important;
 }
 
 /* partners end */
 /* help */
 
 #kody-button {
-  background-image: url(/images/layouts/kody.png);
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/kody.png);
 }
 
 #kody-button.active,
 #kody-button.hovered {
-  background-image: url(/images/layouts/kody_active.png) !important;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/kody_active.png) !important;
 }
 
 #zlacza-button {
-  background-image: url(/images/layouts/zlacza.png);
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/zlacza.png);
 }
 
 #zlacza-button.active,
 #zlacza-button.hovered {
-  background-image: url(/images/layouts/zlacza_active.png) !important;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/zlacza_active.png) !important;
 }
 
 #samochody-button {
-  background-image: url(/images/layouts/samochody.png);
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/samochody.png);
 }
 
 #samochody-button.active,
 #samochody-button.hovered {
-  background-image: url(/images/layouts/samochody_active.png) !important;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/samochody_active.png) !important;
 }
 /* help end */
 /* submenu lines */

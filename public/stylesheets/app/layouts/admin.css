@@ -1,5 +1,5 @@
 html {
-  background: url(/images/main_background.png) no-repeat center center fixed;
+  background: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/main_background.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9,8 +9,8 @@ html {
 .ie_bg_fix {
   z-index: -1;
   position:fixed; top:0; left:0; width:100%; height:100%;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/main_background.png', sizingMethod='scale');
--ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/main_background.png', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/main_background.png', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/main_background.png', sizingMethod='scale')";
 }
 
 
@@ -78,14 +78,14 @@ body {
   position: relative;
   bottom: 0;
   background-repeat: no-repeat;
-  background-image: url(/images/layouts/custom_button.png);
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/custom_button.png);
 }
 
 #add-codes-button.hovered,
 #add-news-button.hovered,
 #menu p.active,
 #menu p.hovered {
-  background-image: url(/images/layouts/custom_button_active.png) !important;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/custom_button_active.png) !important;
 }
 
 #add-codes-button.hovered a,
@@ -114,7 +114,7 @@ body {
 
 #codes-search-form p.search,
 #news-search-form p.search{
-  background: url(/images/layouts/input.png) no-repeat;
+  background: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/input.png) no-repeat;
   width: 193px;
   height: 47px;
   float: left;
@@ -146,12 +146,12 @@ body {
   width: 27px;
   height: 47px;
   background-repeat: no-repeat;
-  background-image: url(/images/layouts/search.png);
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/search.png);
 }
 
 #commit.active,
 #commit.hovered {
-  background-image: url(/images/layouts/search_active.png) !important;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/search_active.png) !important;
 }
 
 #add-codes-button,
@@ -161,7 +161,7 @@ body {
   height: 47px;
   margin: 12px 0px 0px 8px;
   background-repeat: no-repeat;
-  background-image: url(/images/layouts/custom_button.png);
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/custom_button.png);
 }
 
 /* news index */

@@ -36,36 +36,36 @@
 }
 
 #firma-button {
-  background-image: url(/images/layouts/firma.png);
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/firma.png);
 }
 #firma-button.active,
 #firma-button.hovered {
-  background-image: url(/images/layouts/firma_active.png) !important;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/firma_active.png) !important;
 }
 
 #urzadzenia-button {
-  background-image: url(/images/layouts/urzadzenia.png);
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/urzadzenia.png);
 }
 
 #urzadzenia-button.active,
 #urzadzenia-button.hovered {
-  background-image: url(/images/layouts/urzadzenia_active.png) !important;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/urzadzenia_active.png) !important;
 }
 
 #partnerzy-button {
-  background-image: url(/images/layouts/partnerzy.png);
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/partnerzy.png);
 }
 
 #partnerzy-button.active,
 #partnerzy-button.hovered {
-  background-image: url(/images/layouts/partnerzy_active.png) !important;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/partnerzy_active.png) !important;
 }
 
 #pomoc-button {
-  background-image: url(/images/layouts/pomoc.png);
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/pomoc.png);
 }
 
 #pomoc-button.active,
 #pomoc-button.hovered {
-  background-image: url(/images/layouts/pomoc_active.png) !important;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/bluecheckpoint/public/images/layouts/pomoc_active.png) !important;
 }
