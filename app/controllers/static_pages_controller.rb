@@ -1,6 +1,5 @@
 class StaticPagesController < ApplicationController
   def company
-    @photos = DevicePhoto.all
   end
 
   def contact
@@ -10,6 +9,7 @@ class StaticPagesController < ApplicationController
   end
 
   def devices
+    @photos = DevicePhoto.all
   end
 
   def localization

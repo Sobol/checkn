@@ -1,22 +1,4 @@
-<% content_for :javascripts do %>
-  <%= javascript_include_tag 'lib/jquery.jcarousel', 'lib/jquery.fancybox-1.3.4.pack', 'app/company' %>
-  <%= stylesheet_link_tag "app/jquery.fancybox-1.3.4" %>
-<% end %>
-
 <div class="static">
-  <% if @photos.count > 4 %>
-    <% @photos.each do |p|%>
-      <div id="carousel" class="jcarousel">
-        <div class="carousel_container">
-          <ul>
-            <li class="thumb">
-              <%= link_to image_tag(p.photo(:thumb)), p.photo(:original) %>
-            </li>
-          </ul>
-        </div>
-      </div>
-    <% end %>
-  <% end %>
   <p>
     Elektroniką i diagnostyką samochodową zajmujemy się od 1990 roku.
     Posiadamy rozległą wiedzę zarówno teoretyczną jak też praktyczną w zakresie obsługi
