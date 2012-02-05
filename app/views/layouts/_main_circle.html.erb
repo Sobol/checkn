@@ -32,8 +32,9 @@
     <% elsif params[:action] == "cooperation" %>
       <%= image_tag "circle-images/lokalizacje.png", alt: 'localization', class: 'hidden' %>
       <%= image_tag "circle-images/wspolpraca.png", alt: 'cooperation', class: 'main-image' %>
-    <% elsif params[:action] == "partners" || params[:action] == "technodiag" || params[:action] == "imedia" %>
+    <% elsif params[:action] == "partners" %>
       <%= image_tag "circle-images/partnerzy.png", alt: 'partners', class: 'main-image' %>
+      <%= image_tag "circle-images/technodiag.png", alt: 'technodiag', class: 'hidden' %>
     <% elsif params[:action] == "help" %>
       <%= image_tag "circle-images/pomoc.png", alt: 'help', class: 'main-image' %>
       <%= image_tag "circle-images/kody.png", alt: 'codes', class: 'hidden' %>
