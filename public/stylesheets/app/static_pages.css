@@ -13,6 +13,11 @@
   height: 84px;
 }
 
+.jcarousel ul li a img {
+  display: table-cell; 
+  vertical-align: middle;
+}
+
 #carousel, .jcarousel-clip, .carousel_container{
   height: 92px !important;
 }
