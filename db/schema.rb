@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120112231436) do
+ActiveRecord::Schema.define(:version => 20120211104449) do
 
   create_table "codes", :force => true do |t|
     t.string   "number"
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(:version => 20120112231436) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "title"
-    t.string   "content"
+    t.text     "content"
   end
 
   create_table "static_pages", :force => true do |t|
